@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'title-color': '#7A20D5'
+      },
+      fontFamily: {
+        'press-start': ['PressStart2P', 'cursive'],
+        'pretendard': ['PretendardVarible', 'font-awesome']
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
