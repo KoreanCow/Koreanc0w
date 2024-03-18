@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navigation = () => {
   return (
-    <div className='h-36 flex flex-col items-center text-title-color font-pretendard '>
+    <div className='bg-white h-38 flex flex-col items-center text-title-color font-hard '>
       <div className='w-11/12 h-28 flex items-center justify-between'>
         <Link className='font-press-start font-normal text-xl ' href='/'>
           KOREANCOW
@@ -11,7 +11,7 @@ const Navigation = () => {
         <span className='font-bold text-sm'>log out</span>
       </div>
       <div className=' text-base font-pretendard flex justify-center w-dvw border-y-2 border-title-color'>
-        <div className='font-bold w-11/12 h-12 flex justify-between items-center'>
+        <div className='font-bold w-11/12 h-10 flex justify-between items-center pt-1'>
           <span>
             Web blog
           </span>
@@ -22,7 +22,7 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
