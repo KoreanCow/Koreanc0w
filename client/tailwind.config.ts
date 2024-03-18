@@ -8,14 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        '600': '600px'
+      },
       colors: {
         'title-color': '#7A20D5'
       },
       fontFamily: {
         'press-start': ['PressStart2P', 'cursive'],
-        'pretendard': ['PretendardVarible', 'font-awesome']
+        'pretendard': ['PretendardVarible', 'font-awesome'],
+        'lexendZetta': ['LexendZetta-Black', 'font-awesome']
       },
       backgroundImage: {
+        main: "url('../../public/imgs/IMG_2434.jpeg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
