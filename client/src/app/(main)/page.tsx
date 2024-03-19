@@ -17,6 +17,18 @@ export default function Home() {
         className="w-full h-full z-0 object-cover"
         priority
       />
+      <div className='w-full border-b-5 h-5 border-b border-title-color'>
+        <div className=' w-1/2 h-5 bg-light-title border-b  border-title-color ' />
+      </div>
+      <div className='w-full h-400 bg-black'>
+
+      </div>
+      <div className='w-full h-1800 bg-lime-300 border-b-2 border-light-title'>
+
+      </div>
+      <div className='w-full h-16 mt-9 bg-light-title'>
+
+      </div>
     </div>
   );
 }

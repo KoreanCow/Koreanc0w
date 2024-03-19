@@ -9,10 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       height: {
-        '600': '600px'
+        '600': '600px',
+        '400': '400px',
+        '1800': '1800px'
       },
       colors: {
-        'title-color': '#7A20D5'
+        'title-color': '#7A20D5',
+        'light-title': '#9F77F6'
       },
       fontFamily: {
         'press-start': ['PressStart2P', 'cursive'],
