@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        '91': '91%',
+      },
       height: {
         '600': '600px',
         '400': '400px',
