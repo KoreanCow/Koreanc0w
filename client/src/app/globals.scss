@@ -28,12 +28,11 @@ body {
   @apply hover:opacity-20 transition ease-in-out;
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root {
+  --title-color: #7A20D5;
+  --light-title-color: #7a20d5;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

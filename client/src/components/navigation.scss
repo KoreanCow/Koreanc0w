@@ -1,7 +1,8 @@
 // ----------------------------------------------------------------
 .navigation-bar--container{
   background: white;
-  color: #7A20D5;
+  // color: #7A20D5;
+  color: var(--title-color);
   width: 100dvw;
   height: 160px;
 
@@ -13,6 +14,11 @@
   top: 0;
   
   z-index: 20;
+  // transition: opacity 0.3s;
+  transition: opacity 0.3s ease-in-out;
+}
+.navigation-bar--container-scrolled{
+  opacity: 0.5;
 }
 // ----------------------------------------------------------------
 // navigation bar top  --------------------------------------------
@@ -44,7 +50,7 @@
 
   border-top-width: 2px;
   border-bottom-width: 2px;
-  border-color: #7A20D5;
+  border-color: var(--title-color);
 
   font-family: 'Pretendard';
   font-size: 16px;
