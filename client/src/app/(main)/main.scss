@@ -1,10 +1,10 @@
-// ----------------------------------------------------------------
-.main-page--container{
+// main-page--top----------------------------------------------------
+.main-page--top-container{
   width: 100dvw;
   height: 600px;
   position: relative;
 }
-.main-page--container-text{
+.main-page--top-container-text{
   position: absolute;
 
   font-family: 'LexendZetta';
@@ -18,10 +18,109 @@
 
   z-index: 10;
 }
-.main-page--container-main-img{
+@media(max-width: 730px ) {
+  .main-page--top-container-text{
+    font-size: 40px;
+    white-space: wrap;
+    text-align: center;
+  }
+}
+.main-page--top-container-main-img{
   width: 100dvw;
   height: 100%;
   z-index: 0;
   object-fit: cover;
+}
+
+.main-page--top-container-classfication{
+  width: 100dvw;  
+  height: 15px;
+    
+  border-bottom: 1px solid var(--title-color);
+}
+.main-page--top-container-classfication-progress{
+  width: 50%;
+  height: inherit;
+  
+  background: var(--light-title-color);
+  
+  border-bottom: 1px solid var(--title-color);
+  border-right: 1px solid var(--title-color);
+  border-color: var(--title-color);
+}
+// ----------------------------------------------------------------
+// main-page--profile----------------------------------------------
+.main-page--profile-container{
+  width: 100dvw;
+  height: 400px;
+  background: black;
+
+  display: flex;
+  justify-content: center;
+  
+}
+.main-page--profile-media-query-box{
+  width: 91%;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media(max-width: 730px ) {
+  .main-page--profile-container{
+    height: 650px;
+  }
+  .main-page--profile-media-query-box{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+  } 
+}
+.main-page--profile-summary{
+  width: 400px;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: 'Pretendard';
+  color: white;
+
+  p{
+    font-size: 44px;
+    font-weight: 700;
+    white-space: wrap;
+    text-align: center;
+  }
+
+  span{
+    font-size: 16px;
+    white-space: wrap;
+  }
+}
+.main-page--profile-img{  
+  width: 240px;
+  height: 240px;
+  background: #d9d9d9b4;
+  border-radius: 65px;
+}
+// ----------------------------------------------------------------
+// main-page--post-------------------------------------------------------
+.main-page--post{
+  width: 100dvw;
+  height: 1800px;
+  background: lightblue;
+  
+  border-bottom: 1px solid var(--light-title-color);
+}
+.main-page--bottom-container{
+  width: 100dvw;
+  height: 64px;
+  margin-top: 2.25rem;
+  background: var(--light-title-color);
 }
 // ----------------------------------------------------------------
