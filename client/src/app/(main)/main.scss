@@ -18,11 +18,26 @@
 
   z-index: 10;
 }
+.main-page--top-container-block{
+  position:absolute;
+  top: 35%;
+  left: 15%;
+  
+  transform: rotate(-90deg);
+}
 @media(max-width: 730px ) {
   .main-page--top-container-text{
     font-size: 40px;
     white-space: wrap;
     text-align: center;
+  }
+  .main-page--top-container-block{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+     width: 25px;
+     
+  transform: rotate(-90deg);
   }
 }
 .main-page--top-container-main-img{
@@ -66,6 +81,19 @@
   justify-content: space-between;
   align-items: center;
 }
+.main-page--profile-block{
+  position: absolute;
+  left: 30%;
+  top: 105%;
+  opacity: 0.5;
+}
+.main-page--profile-block2{
+  position: absolute;
+  left: 75%;
+  top: 120%;
+  transform: rotate(-90deg);
+  opacity: 0.5;
+}
 @media(max-width: 730px ) {
   .main-page--profile-container{
     height: 650px;
@@ -76,7 +104,21 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 30px;
-  } 
+  }
+  .main-page--profile-block{
+    position: absolute;
+    left: 5%;
+    top: 125%;
+    opacity: 0.5;
+  }
+  .main-page--profile-block2{
+    position: absolute;
+    width: 40px;
+    left: 85%;
+    top: 140%;
+    transform: rotate(-90deg);
+    opacity: 0.5;
+  }
 }
 .main-page--profile-summary{
   width: 400px;
@@ -112,10 +154,59 @@
 // main-page--post-------------------------------------------------------
 .main-page--post{
   width: 100dvw;
-  height: 1800px;
-  background: lightblue;
+  height: 1300px;
+  background: white;
   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
   border-bottom: 1px solid var(--light-title-color);
+}
+@media(max-width: 730px ){
+  .main-page--post-container{
+    width: 90vw;
+    height: 400px;
+
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main-page--post-container{
+  width: 90vw;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.main-page--post-summary{
+  margin-bottom: 30px;
+  font-family: 'Pretendard';
+
+  p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  span{
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+.main-page--post-picture{
+  width: 400px;
+  height: inherit;
+  object-fit: cover;
+  background: #D9D9D9;
+}
+.main-page--post-list{
+  width: inherit;
+  height: 50px;
+
+  background: lightcoral;
 }
 .main-page--bottom-container{
   width: 100dvw;
